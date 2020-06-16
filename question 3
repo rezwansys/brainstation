@@ -1,0 +1,10 @@
+shell# docker pull jenkins/jenkins:2.180
+shell# docker run -d -v jenkins_home:/var/jenkins_home -p 8080:8080 -p 50000:50000 jenkins/jenkins:2.180
+
+jenkins pipeline script
+
+node{
+
+	stage ("Build Docker Image"){
+		sh "docker run hello-world"
+	}

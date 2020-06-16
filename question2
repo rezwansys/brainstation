@@ -1,0 +1,8 @@
+vi docker-compose.yml
+	version: "2"
+ services:
+hello-world: 
+image: hello-world 
+
+
+shell# docker-compose scale hello-world=3
